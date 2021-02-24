@@ -1,0 +1,18 @@
+
+<%- include("partials/header"); -%>
+
+<div class="card">
+  <div class="card-body">
+    <h1>Compose</h1>
+    <form class="" action="/compose" method="post">
+      <div class="form-group">
+        <input class="form-control" type="text" name="entryTitle" placeholder="Title">
+        <input class="form-control" type="date" name="entryDate" value="<%=date%>" max="<%=date%>">
+        <textarea class="form-control" name="entryText" rows="10" cols="30" placeholder="Text"></textarea>
+      </div>
+      <button class="btn" type="submit" name="button">Save</button>
+    </form>
+  </div>
+</div>
+
+<%- include("partials/footer"); -%>
